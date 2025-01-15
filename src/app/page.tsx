@@ -8,7 +8,6 @@ import BackgroundImage from "@/assets/images/bgImage.png";
 import Footer from "@/components/footer";
 import BottomBar from "@/components/botomBar";
 import Carousel from "@/components/carousel";
-
 const page = () => {
   return (
     <>
