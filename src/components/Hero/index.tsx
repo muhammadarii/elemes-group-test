@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BackgroundImage from "@/assets/images/bgImage.png";
 import heroImage from "@/assets/images/Hero.png";
-import StarRating from "../starRating";
+// import StarRating from "../starRating";
 
 const Hero = () => {
   return (
