@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BackgroundImage from "@/assets/images/bgImage.png";
 import heroImage from "@/assets/images/Hero.png";
-// import StarRating from "../starRating";
+import StarRating from "../starRating";
 
 const Hero = () => {
   return (
@@ -38,6 +38,23 @@ const Hero = () => {
               alt="Hero"
               className="w-[412.9px] h-[414.75px] rounded-full z-20"
             />
+          </div>
+          <div>
+            <div className="absolute bg-[#F2F2F2] bottom-[240px] right-[20px] md:top-[500px] md:right-[400px] z-30 w-[292px] h-[93px] rounded-[17px] opacity-80 backdrop-blur-[500px] shadow-md"></div>
+            <div className="absolute flex flex-row justify-start items-center bottom-[240px] right-[20px] md:top-[500px] md:right-[400px] z-30 w-[292px] h-[93px]">
+              <Image
+                src={heroImage}
+                alt="image"
+                className="w-[53px] h-[53px] ml-[23px]"
+              />
+              <div className="flex flex-col ml-[19px]">
+                <p className="text-[14px] font-medium text-black">
+                  Green Salad Tomato
+                </p>
+                <p className="text-[12px] font-normal text-[#757575]">Tomato</p>
+                <StarRating totalStars={5} initialRating={4} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
