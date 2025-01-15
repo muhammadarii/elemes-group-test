@@ -31,30 +31,13 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex flex-col justify-start md:justify-center items-start">
-          <div className="flex justify-center md:justify-center items-center relative bg-[#f5f5f5] w-[250px] h-[250px] md:w-[518.71px] md:h-[518.46] rounded-full">
+        <div className="">
+          <div className="flex justify-center items-center w-[518.71px] h-[518.46px] bg-[#F2F2F2] rounded-full">
             <Image
               src={heroImage}
               alt="Hero"
-              className="w-[200px] h-[200px] md:w-[412.9px] md:h-[414.75px] z-20 absolute"
+              className="w-[412.9px] h-[414.75px] rounded-full z-20"
             />
-          </div>
-          <div>
-            <div className="absolute bg-[#F2F2F2] bottom-[240px] right-[20px] md:top-[400px] md:right-[297px] z-30 w-[292px] h-[93px] rounded-[17px] opacity-80 backdrop-blur-[500px] shadow-md"></div>
-            <div className="absolute flex flex-row justify-start items-center bottom-[240px] right-[20px] md:top-[400px] md:right-[297px] z-30 w-[292px] h-[93px]">
-              <Image
-                src={heroImage}
-                alt="image"
-                className="w-[53px] h-[53px] ml-[23px]"
-              />
-              <div className="flex flex-col ml-[19px]">
-                <p className="text-[14px] font-medium text-black">
-                  Green Salad Tomato
-                </p>
-                <p className="text-[12px] font-normal text-[#757575]">Tomato</p>
-                <StarRating totalStars={5} initialRating={4} />
-              </div>
-            </div>
           </div>
         </div>
       </div>
