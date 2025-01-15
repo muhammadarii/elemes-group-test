@@ -39,7 +39,7 @@ const Hero = () => {
               className="w-[200px] h-[200px] md:w-[412.9px] md:h-[414.75px] z-20 absolute"
             />
           </div>
-          <div>
+          <div className="relative">
             <div className="absolute bg-[#F2F2F2] bottom-[240px] right-[20px] md:top-[400px] md:right-[297px] z-30 w-[292px] h-[93px] rounded-[17px] opacity-80 backdrop-blur-[500px] shadow-md"></div>
             <div className="absolute flex flex-row justify-start items-center bottom-[240px] right-[20px] md:top-[400px] md:right-[297px] z-30 w-[292px] h-[93px]">
               <Image
