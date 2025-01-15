@@ -30,7 +30,7 @@ const CategoriesCard: React.FC<categoriesCardProps> = ({
           <p className="text-[14px] mt-[4px] text-black">{description}</p>
         </div>
         <div
-          className="w-full h-full bg-center hidden group-hover:block bg-cover transition-all duration-300 object-scale-down"
+          className="w-full h-full bg-center hidden group-hover:block bg-cover transition-all duration-300 opacity-10 object-scale-down"
           style={{
             backgroundImage: `url(${bgImage.src})`,
             backgroundSize: "contain",

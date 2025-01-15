@@ -69,8 +69,8 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-[573px] font-rubik">
-      <div className="pt-[64.22px] pl-[116px]">
+    <div className="relative w-full md:h-[573px] font-rubik">
+      <div className="pt-[64.22px] pl-[30px] md:pl-[116px]">
         <p className="text-[38px] font-medium text-[#333333]">
           Browse Our Category
         </p>
@@ -82,7 +82,7 @@ const Carousel = () => {
         ref={scrollRef}
         className="flex flex-col justify-start items-start overflow-x-scroll scrollbar-hide"
       >
-        <div className="flex flex-row mt-[32.78px] gap-[10px] pl-[116px]">
+        <div className="flex flex-row mt-[32.78px] gap-[10px] pl-[30px] md:pl-[116px]">
           {data.map((item, index) => (
             <div key={index}>
               <CategoriesCard
@@ -96,7 +96,7 @@ const Carousel = () => {
         </div>
       </div>
       {/* arrow */}
-      <div className="absolute bottom-[50px] right-[133px] flex flex-row gap-[10px] text-black">
+      <div className="absolute bottom-[50px] right-[133px] flex-row gap-[10px] text-black hidden md:flex">
         <button
           onClick={scrollLeft}
           className="flex justify-start items-center w-[113px] h-[50px] rounded-full bg-primary-300"

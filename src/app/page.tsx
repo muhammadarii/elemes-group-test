@@ -8,6 +8,9 @@ import BackgroundImage from "@/assets/images/bgImage.png";
 import Footer from "@/components/footer";
 import BottomBar from "@/components/botomBar";
 import Carousel from "@/components/carousel";
+import Trending from "@/components/trending";
+import StarRating from "@/components/starRating";
+
 const page = () => {
   return (
     <>
@@ -60,6 +63,7 @@ const page = () => {
                     <p className="text-[12px] font-normal text-[#757575]">
                       Tomato
                     </p>
+                    <StarRating totalStars={5} initialRating={4} />
                   </div>
                 </div>
               </div>
@@ -82,6 +86,9 @@ const page = () => {
         {/* Carousel */}
         <div>
           <Carousel />
+        </div>
+        <div>
+          <Trending />
         </div>
         {/* BottomBar */}
         <div>
