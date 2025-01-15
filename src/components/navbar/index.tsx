@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Logo from "@/assets/images/Logo-Elemes.png";
 import Link from "next/link";
+import Button from "../Button";
 
 const url = [
   {
@@ -28,32 +29,34 @@ const url = [
 ];
 const Navbar = () => {
   return (
-    <div className="mx-auto container fixed top-0 left-0 right-0 justify-between flex font-rubik text-[14px] items-center py-[32px] px-[116px] font-medium">
-      <Link href="/">
-        <Image src={Logo} alt="logo" width={207} height={50} priority />
-      </Link>
-      <div className="flex-row flex gap-[32px] text-[#757575]">
-        {url.map(({ link, label, badge }) => (
-          <Link key={label} href={link} className="relative">
-            {badge && (
-              <span className="absolute top-[-18px] left-[58.5px] flex justify-center items-center text-[#FFFFFF] bg-[#E7462D] w-[36px] h-[19px] rounded-[8px] text-[8px]">
-                {badge}
-              </span>
-            )}
-            {label}
+    <div className="fixed top-0 left-0 right-0 font-rubik text-[14px] font-medium bg-white z-50">
+      <div className="flex-row flex justify-between items-center mx-[33px] mt-[28px] mb-[19px] md:mt-[19px] md:mb-[27px] md:mx-[116px]">
+        <Link href="/">
+          <Image
+            src={Logo}
+            alt="logo"
+            priority
+            className="w-[150px] h-[36px] md:w-[207px] md:h-[50px]"
+          />
+        </Link>
+        <div className="flex-row flex gap-[32px] text-[#757575]">
+          {url.map(({ link, label, badge }) => (
+            <Link key={label} href={link} className="relative hidden md:block">
+              {badge && (
+                <span className="absolute top-[-18px] left-[58.5px] flex justify-center items-center text-[#FFFFFF] bg-[#E7462D] w-[36px] h-[19px] rounded-[8px] text-[8px]">
+                  {badge}
+                </span>
+              )}
+              {label}
+            </Link>
+          ))}
+        </div>
+        <div className="flex-row flex items-center gap-[24px]">
+          <Link href="/login" className="text-[#333333] hidden md:flex">
+            Masuk
           </Link>
-        ))}
-      </div>
-      <div className="flex-row flex items-center gap-[24px]">
-        <Link href="/login" className="text-[#333333]">
-          Masuk
-        </Link>
-        <Link
-          href="/signin"
-          className="bg-[#8BAC3E] text-[#FFFFFF] py-[10px] px-[18px] rounded-[100px]"
-        >
-          Daftar Sekarang
-        </Link>
+          <Button href="/" label="Daftar Sekarang" />
+        </div>
       </div>
     </div>
   );
