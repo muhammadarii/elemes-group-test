@@ -103,7 +103,7 @@ const trending = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center items-center mt-[68px]">
+      <div className="hidden md:flex justify-center items-center mt-[68px]">
         <Button href="/" label="ALL Receipt" />
       </div>
     </div>
